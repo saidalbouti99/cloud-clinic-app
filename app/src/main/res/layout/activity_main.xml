@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ivSplash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4ed4de"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/fredoka_one"
+        android:text="Cloud Clinic"
+        android:textColor="#FFF"
+        android:textSize="44sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ivSubtitle"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/montserrat"
+        android:lineSpacingExtra="8dp"
+        android:text="Connect to our registered doctors online"
+        android:textColor="#FFF"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivSubtitle"
+        app:srcCompat="@drawable/doctor3" />
+
+    <Button
+        android:id="@+id/btn_login_as_doctor"
+        android:layout_width="274dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_btn_main"
+        android:fontFamily="@font/cantarell"
+        android:text="Login As Doctor"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/ivSubtitle"
+        app:layout_constraintStart_toStartOf="@+id/ivSubtitle"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <Button
+        android:id="@+id/btn_login_as_patient"
+        android:layout_width="274dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_btn_main"
+        android:fontFamily="@font/cantarell"
+        android:text="Login As Patient"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivSplash"
+        app:layout_constraintEnd_toEndOf="@+id/btn_login_as_doctor"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_login_as_doctor"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login_as_doctor"
+        app:layout_constraintVertical_bias="0.114" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

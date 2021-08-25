@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <soup.neumorphism.NeumorphImageView
+        style="@style/Widget.Neumorph.ImageView"
+        android:id="@+id/imageView5"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cloudclinic_icon" />
+
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/neumorphTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/cantarell"
+        android:text="Welcome Back!"
+        android:textAlignment="viewStart"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/neumorphTextView2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/cantarell"
+        android:text="You can view your upcoming appointment here."
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/neumorphTextView"
+        app:layout_constraintTop_toBottomOf="@+id/neumorphTextView" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_upcoming_appointment_patient"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="300dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="16dp"
+        android:background="#fff"
+        android:fontFamily="@font/cantarell"
+        android:text="Upcoming Appointment"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/neumorphTextView2"
+        app:layout_constraintStart_toStartOf="@+id/neumorphTextView2"
+        app:layout_constraintTop_toBottomOf="@+id/neumorphTextView2" />
+
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_book_appointment_patient"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="300dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="16dp"
+        android:background="#fff"
+        android:fontFamily="@font/cantarell"
+        android:text="Book Appointment"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/neumorphTextView2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/neumorphTextView2"
+        app:layout_constraintTop_toBottomOf="@+id/btn_upcoming_appointment_patient" />
+
+    <!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/btn_book_appointment_patient"-->
+<!--        android:layout_width="254dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="#fff"-->
+<!--        android:fontFamily="@font/cantarell"-->
+<!--        android:text="Book appointment"-->
+<!--        android:textSize="24sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.493"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        tools:layout_editor_absoluteY="414dp" />-->
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/btn_join_appointment_patient"-->
+<!--        android:layout_width="254dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:background="#fff"-->
+<!--        android:fontFamily="@font/cantarell"-->
+<!--        android:text="Join appointment"-->
+<!--        android:textSize="24sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.496"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_book_appointment_patient" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

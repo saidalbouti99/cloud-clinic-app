@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+
+        <item>@font/bungee</item>
+        <item>@font/cantarell</item>
+        <item>@font/cantarell_bold</item>
+        <item>@font/fredoka_one</item>
+        <item>@font/lato</item>
+        <item>@font/montserrat</item>
+
+    </array>
+</resources>

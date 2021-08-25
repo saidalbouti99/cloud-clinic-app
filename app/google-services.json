@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "469915344665",
+    "firebase_url": "https://cloud-clinic-d2a89.firebaseio.com",
+    "project_id": "cloud-clinic-d2a89",
+    "storage_bucket": "cloud-clinic-d2a89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:469915344665:android:dca44523ff4330669cef88",
+        "android_client_info": {
+          "package_name": "com.example.cloudclinic_said"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "469915344665-5n3q698bao6coc79dqo6sr9224vr5aqt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cloudclinic_said",
+            "certificate_hash": "df9f7638ae3b5592265a7ea396343d95eb38dc59"
+          }
+        },
+        {
+          "client_id": "469915344665-hk4v5rce4f6tsgqu8bjn7vcf4afqlkmp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkSjKizcBjF4hKrCpJMlbAkZavr0ZGmxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "469915344665-hk4v5rce4f6tsgqu8bjn7vcf4afqlkmp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/neumorphTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/cantarell"
+        android:text="Welcome Back!"
+        android:textAlignment="viewStart"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/neumorphTextView2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/cantarell"
+        android:text="You can view your upcoming appointment here."
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/neumorphTextView"
+        app:layout_constraintTop_toBottomOf="@+id/neumorphTextView" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_upcoming_appointment_patient"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/cantarell"
+        android:text="Upcoming Appointment"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/neumorphTextView2"
+        app:layout_constraintStart_toStartOf="@+id/neumorphTextView2"
+        app:layout_constraintTop_toBottomOf="@+id/neumorphTextView2" />
+
+    <soup.neumorphism.NeumorphImageView
+        style="@style/Widget.Neumorph.ImageView"
+        android:id="@+id/imageView5"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cloudclinic_icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

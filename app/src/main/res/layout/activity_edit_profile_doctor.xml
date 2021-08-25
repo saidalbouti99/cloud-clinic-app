@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" tools:context=".EditProfileDoctorActivity">
+    -
+
+    -<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+    -
+
+    -
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:background="@color/colorPrimary"
+        android:padding="20dp">
+
+        <soup.neumorphism.NeumorphImageView
+            android:id="@+id/profile_image_doctor"
+            style="@style/Widget.Neumorph.ImageView"
+            android:layout_width="147dp"
+            android:layout_height="162dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_account_circle_black_24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <soup.neumorphism.NeumorphButton
+            style="@style/Widget.Neumorph.Button"
+            android:id="@+id/btn_upload_image_doctor"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="4dp"
+            android:background="#fff"
+            android:fontFamily="@font/cantarell"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="Upload image"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/profile_image_doctor"
+            app:layout_constraintStart_toStartOf="@+id/profile_image_doctor"
+            app:layout_constraintTop_toBottomOf="@+id/profile_image_doctor" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    -
+
+    -<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+    -
+
+    -<com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:hint="Full Name">
+
+    <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/et_doctor_name_editprofile" android:fontFamily="@font/cantarell" android:text="" android:drawableLeft="@drawable/ic_person_outline_black_24dp" android:drawablePadding="10dp"/>
+
+</com.google.android.material.textfield.TextInputLayout>
+    -
+
+    -<com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:hint="Job Title">
+
+    <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/et_doctor_title_editprofile" android:fontFamily="@font/cantarell" android:text="" android:drawableLeft="@drawable/ic_work_black_24dp" android:drawablePadding="10dp"/>
+
+</com.google.android.material.textfield.TextInputLayout>
+    -
+
+    -<com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:hint="Email">
+
+    <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/et_doctor_email_editprofile" android:fontFamily="@font/cantarell" android:text="" android:drawableLeft="@drawable/ic_email_black_24dp" android:drawablePadding="10dp"/>
+
+</com.google.android.material.textfield.TextInputLayout>
+    -
+
+    -<com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:hint="IC No.">
+
+    <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/et_doctor_icno_editprofile" android:fontFamily="@font/cantarell" android:text="" android:drawableLeft="@drawable/ic_credit_card_black_24dp" android:drawablePadding="10dp" android:inputType="number"/>
+
+</com.google.android.material.textfield.TextInputLayout>
+    -
+
+    -<com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:hint="Phone No.">
+
+    <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/et_doctor_phone_editprofile" android:fontFamily="@font/cantarell" android:text="" android:drawableLeft="@android:drawable/ic_menu_call" android:drawablePadding="10dp" android:inputType="phone"/>
+
+</com.google.android.material.textfield.TextInputLayout>
+    -
+
+    -<com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:hint="Hospital/Clinic">
+
+    <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/et_clinic_doctor_editprofile" android:fontFamily="@font/cantarell" android:text="" android:drawableLeft="@drawable/ic_info_black_24dp" android:drawablePadding="10dp"/>
+
+</com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_update_editprofile_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/cantarell"
+        android:text="Update"
+        android:textStyle="bold" />
+
+</LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cloudclinic_said">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".BookDoctorActivity"></activity>
+        <activity android:name=".DashboardActivity"></activity>
+        <activity android:name=".ReadyActivity" />
+        <activity android:name=".PaymentSuccessActivity" />
+        <activity android:name=".PaymentActivity" /> <!-- <activity android:name=".BookActivity" /> -->
+        <activity android:name=".TestRecyclerView" />
+        <activity android:name=".BookForLaterSuccessActivity" />
+        <activity android:name=".BookForLaterActivity" />
+        <activity android:name=".BookForNowActivity" />
+        <activity android:name=".SignupPatientSuccessActivity" />
+        <activity android:name=".UploadICPatient2Activity" />
+        <activity android:name=".UploadICPatientActivity" />
+        <activity android:name=".EditProfilePatientActivity" />
+        <activity android:name=".UpcomingAppointmentPatientActivity" />
+        <activity android:name=".PatientHomepageActivity" />
+        <activity android:name=".LoginPatientActivity" />
+        <activity android:name=".OTPSuccessDoctorActivity" />
+        <activity android:name=".TAC_Doctor_Activity" />
+        <activity android:name=".EnterOTPDoctorActivity" />
+        <activity android:name=".SignupDoctorActivity" />
+        <activity android:name=".EditProfileDoctorActivity" />
+        <activity android:name=".LoginDoctorActivity" />
+        <activity android:name=".UpcomingAppointmentDoctorActivity" />
+        <activity android:name=".DoctorHomepageActivity" />
+        <activity android:name=".SignupAsPatientActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".firebase.MessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

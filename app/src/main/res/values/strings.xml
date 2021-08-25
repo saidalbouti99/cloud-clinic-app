@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Cloud Clinic Test</string>
+    <string name="tv_create_an_account">Create an Account</string>
+    <string name="title_activity_doctor_homepage3">DoctorHomepageActivity3</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string-array name="Spinner_items">
+
+        <item>Voice Call</item>
+
+        <item>Video Call</item>
+
+    </string-array>
+
+
+</resources>
